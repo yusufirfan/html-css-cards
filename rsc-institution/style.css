@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+  background-color: coral;
+  text-transform: uppercase;
+}
+
+/* .card-container{
+  
+} */
+
+.card{
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Top */
+
+.card .top{
+  width: 100%;
+  padding: 8px;
+  font-family: 'Jura', sans-serif;
+  font-weight: 700;
+  background-color: #5CE084;
+  border: 3px solid white;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Middle */
+
+.card .middle{
+  width: 100%;
+  background-color: #111111;
+  border: 3px solid white;
+  border-top: 0;
+  display: flex;
+  height: 200px;
+}
+
+/* Card Middle Left */
+
+.card .middle .left{
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+}
+
+.card .middle .left .info{
+  border: 3px solid white;
+  border-top: 0;
+  border-left: 0;
+  padding: 8px;
+  height: 73px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card .middle .left .info h3{
+  font-family: 'Questrial', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: .5px;
+}
+
+.card .middle .left .info h2{
+  font-family: 'Jura', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.card .middle .left .info:last-child{
+  border-bottom: 0;
+}
+
+.card .middle .left .info img{
+  height: 20px;
+  margin-right: 5px;
+}
+
+.card .middle .left .info span{
+  display: flex;
+  align-items: center;
+}
+
+/* Card Middle Mid */
+
+.card .middle .mid{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 8px;
+  background-color: #5CE084;
+}
+
+.card .middle .mid .texts{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card .middle .mid .texts h2{
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+.card .middle .mid .texts h1{
+  font-size: 26px;
+  letter-spacing: 3px;
+  margin-left: 4px;
+}
+
+.card .middle .mid .texts h3{
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.card .middle .mid .imgs{
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card .middle .mid .imgs .rank{
+  position: absolute;
+  width: 50px;
+  top: 3px;
+  right: 14px;
+}
+
+/* Card Middle Right */
+
+.card .middle .right{
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card .middle .right img{
+  height: 100%;
+  width: 101%;
+  object-fit: cover;
+  border-left: 3px solid white;
+}
+
+
+/* Card Bottom */
+
+.card .bottom{
+  width: 100%;
+  background-color: #111111;
+  border: 3px solid white;
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  height: 100px;
+}
+
+/* Card Bottom Left */
+
+.card .bottom .left{
+  width: 38%;
+  border-right: 3px solid white;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card .bottom .left p:first-child{
+  font-family: 'Inconsolata', monospace;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.card .bottom .left p:last-child{
+  font-family: 'Inconsolata', monospace;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.card .bottom .left .dot{
+  width: 100%;
+  height: 1px;
+  border-top: 1.5px dotted white;
+  margin: 4px 0;
+}
+
+/* Card Bottom Mid */
+
+.card .bottom .mid{
+  width: 30%;
+  padding: 8px;
+}
+
+.card .bottom .barcode .barcode-text{
+  font-family: 'Libre Barcode 39', cursive;
+  font-size: 50px;
+}
+
+.card .bottom .barcode .id-text{
+  font-family: 'Jura', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #5CE084;
+}
+
+/* Card Bottom Right */
+
+.card .bottom .right{
+  width: 32%;
+  border-left: 3px solid white;
+  padding: 8px;
+}
+
+.card .bottom .right p{
+  text-align: center;
+  font-family: 'Jura', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
